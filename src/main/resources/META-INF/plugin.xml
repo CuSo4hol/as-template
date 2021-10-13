@@ -1,18 +1,25 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <id>com.github.fujiahaohol.astemplate</id>
-    <name>as-template</name>
-    <vendor>fujiahaohol</vendor>
+    <id>com.github.fujiahao.template</id>
+    <name>hs-framework-template</name>
+    <vendor>fujiahao</vendor>
 
+    <depends>org.jetbrains.android</depends>
+    <depends>org.jetbrains.kotlin</depends>
+    <depends>com.intellij.modules.java</depends>
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.github.fujiahaohol.astemplate.services.MyApplicationService"/>
-        <projectService serviceImplementation="com.github.fujiahaohol.astemplate.services.MyProjectService"/>
+        <applicationService serviceImplementation="net.huansi.framwork.template.services.MyApplicationService"/>
+        <projectService serviceImplementation="net.huansi.framwork.template.services.MyProjectService"/>
     </extensions>
 
     <applicationListeners>
-        <listener class="com.github.fujiahaohol.astemplate.listeners.MyProjectManagerListener"
+        <listener class="net.huansi.framwork.template.listeners.MyProjectManagerListener"
                   topic="com.intellij.openapi.project.ProjectManagerListener"/>
     </applicationListeners>
+
+    <extensions defaultExtensionNs="com.android.tools.idea.wizard.template">
+        <wizardTemplateProvider implementation="other.SamplePluginTemplateProviderImpl" />
+    </extensions>
 </idea-plugin>

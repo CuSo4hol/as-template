@@ -1,4 +1,4 @@
-package com.github.fujiahaohol.astemplate
+package net.huansi.framwork.template
 
 import com.intellij.ide.highlighter.XmlFileType
 import com.intellij.psi.xml.XmlFile

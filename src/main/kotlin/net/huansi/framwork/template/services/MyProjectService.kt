@@ -1,7 +1,7 @@
-package com.github.fujiahaohol.astemplate.services
+package net.huansi.framwork.template.services
 
 import com.intellij.openapi.project.Project
-import com.github.fujiahaohol.astemplate.MyBundle
+import net.huansi.framwork.template.MyBundle
 
 class MyProjectService(project: Project) {
 

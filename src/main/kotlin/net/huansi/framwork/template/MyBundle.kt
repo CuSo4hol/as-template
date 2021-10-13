@@ -1,4 +1,4 @@
-package com.github.fujiahaohol.astemplate
+package net.huansi.framwork.template
 
 import com.intellij.DynamicBundle
 import org.jetbrains.annotations.NonNls

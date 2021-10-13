@@ -23,6 +23,10 @@ version = properties("pluginVersion")
 repositories {
     mavenCentral()
 }
+dependencies {
+    compileOnly(files("lib/wizard-template.jar"))
+//    detektPlugins("io.gitlab.arturbosch.detekt:detekt-formatting:1.15.0")
+}
 
 // Configure Gradle IntelliJ Plugin - read more: https://github.com/JetBrains/gradle-intellij-plugin
 intellij {
